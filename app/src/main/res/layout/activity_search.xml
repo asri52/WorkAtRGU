@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <CheckBox
+        android:id="@+id/cx_low_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Low-fat"
+        app:layout_constraintStart_toStartOf="@+id/tv_keyword"
+        app:layout_constraintTop_toBottomOf="@+id/tv_keyword" />
+
+    <CheckBox
+        android:id="@+id/cx_vegan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Vegan"
+        app:layout_constraintStart_toStartOf="@+id/cx_low_fat"
+        app:layout_constraintTop_toBottomOf="@+id/cx_low_fat" />
+
+    <CheckBox
+        android:id="@+id/cx_sugar_conscious"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sugar-conscious"
+        app:layout_constraintStart_toStartOf="@+id/cx_vegan"
+        app:layout_constraintTop_toBottomOf="@+id/cx_vegan" />
+
+    <TextView
+        android:id="@+id/tv_keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter keyword"
+        app:layout_constraintEnd_toStartOf="@+id/et_keyword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_max_carbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Max carbs"
+        app:layout_constraintStart_toStartOf="@+id/cx_sugar_conscious"
+        app:layout_constraintTop_toBottomOf="@+id/cx_sugar_conscious" />
+
+    <EditText
+        android:id="@+id/et_keyword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/cx_low_fat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_keyword" />
+
+    <EditText
+        android:id="@+id/et_max_carbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_max_carbs"
+        app:layout_constraintEnd_toEndOf="@+id/et_keyword"
+        app:layout_constraintTop_toTopOf="@+id/tv_max_carbs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

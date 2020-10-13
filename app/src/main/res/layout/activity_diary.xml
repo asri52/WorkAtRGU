@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Diary">
+
+    <TextView
+        android:id="@+id/tv_today_consumed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today consumed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_protein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Protein"
+        app:layout_constraintEnd_toEndOf="@+id/tv_today_consumed"
+        app:layout_constraintStart_toStartOf="@+id/tv_today_consumed"
+        app:layout_constraintTop_toBottomOf="@+id/tv_today_consumed" />
+
+    <TextView
+        android:id="@+id/tv_carbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Carbs"
+        app:layout_constraintEnd_toEndOf="@+id/tv_grams_of_protein"
+        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintStart_toStartOf="@+id/tv_grams_of_protein"
+        app:layout_constraintTop_toBottomOf="@+id/tv_grams_of_protein" />
+
+    <TextView
+        android:id="@+id/tv_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fat"
+        app:layout_constraintEnd_toEndOf="@+id/tv_gramf_of_carbs"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="@+id/tv_gramf_of_carbs"
+        app:layout_constraintTop_toBottomOf="@+id/tv_gramf_of_carbs" />
+
+    <TextView
+        android:id="@+id/tv_grams_of_protein"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="grams of protein"
+        app:layout_constraintEnd_toEndOf="@+id/tv_protein"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@+id/tv_protein"
+        app:layout_constraintTop_toBottomOf="@+id/tv_protein" />
+
+    <TextView
+        android:id="@+id/tv_gramf_of_carbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="grams of carbs"
+        app:layout_constraintEnd_toEndOf="@+id/tv_carbs"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="@+id/tv_carbs"
+        app:layout_constraintTop_toBottomOf="@+id/tv_carbs" />
+
+    <TextView
+        android:id="@+id/tv_grams_of_fat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="grams of fat"
+        app:layout_constraintEnd_toEndOf="@+id/tv_fat"
+        app:layout_constraintStart_toStartOf="@+id/tv_fat"
+        app:layout_constraintTop_toBottomOf="@+id/tv_fat" />
+
+    <Button
+        android:id="@+id/b_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear"
+        app:layout_constraintEnd_toEndOf="@+id/tv_grams_of_fat"
+        app:layout_constraintStart_toStartOf="@+id/tv_grams_of_fat"
+        app:layout_constraintTop_toBottomOf="@+id/tv_grams_of_fat" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
